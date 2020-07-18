@@ -1,0 +1,198 @@
+// Variables
+$accent-pakistan-green   : #0a6e0a;
+$accent-spanish-green    : #27873f;
+$box-shadow-spanish-green: 0 5px 10px rgba(39, 135, 63, 0.4);
+$hero-gradient-sm        : linear-gradient(90deg, black, transparent);
+$hero-gradient           : linear-gradient(45deg, black, dimgrey 110%);
+$feature-cards-gradient  : linear-gradient(45deg, $accent-pakistan-green 0, $accent-spanish-green 100%);
+$max-width-md            : 767px;
+$min-width-md            : 768px;
+
+// Text Selection
+::selection {
+	color: $accent-spanish-green;
+}
+
+// Icons
+.fas {
+	color: $accent-spanish-green;
+}
+
+// Accents
+a,
+.accent {
+	color: $accent-spanish-green;
+
+	&:hover {
+		color: $accent-pakistan-green;
+	}
+}
+
+.text-primary {
+	color: $accent-spanish-green !important;
+}
+
+.text-alternate {
+	color  : $accent-pakistan-green !important;
+	opacity: .8;
+}
+
+a.text-contrast {
+
+	&:hover,
+	&:focus {
+		color: white !important;
+	}
+}
+
+// Hero Gradient
+.gradient.gradient-primary-auxiliary {
+	background-image: $hero-gradient;
+}
+
+// Feature Cards
+.gradient.gradient-primary-light {
+	background-image: $feature-cards-gradient;
+}
+
+// Nav BG
+.static-shape.ghost-shape.ghost-shape-1 {
+	background-color: dimgrey;
+}
+
+// Nav
+.navigation .navbar-toggler .icon-bar {
+	background-color: $accent-spanish-green;
+}
+
+.navigation .nav-link {
+	color: $accent-spanish-green;
+}
+
+// Animated Shapes
+.alter3-header .animation-shape.shape-ring div {
+	border : 5px solid $accent-pakistan-green;
+	opacity: .8;
+}
+
+.alter3-header .animation-shape.shape-diamond div {
+	border-bottom-color: $accent-spanish-green;
+
+	&:after {
+		border-top-color: $accent-spanish-green;
+	}
+}
+
+.alter3-features .shape-circle div {
+	background: $accent-pakistan-green;
+	opacity   : .7;
+}
+
+.powered-design .shape-ring div {
+	border : 5px solid $accent-spanish-green;
+	opacity: .8;
+}
+
+// Heading Underscore
+.heading-line:after {
+	background-color: $accent-pakistan-green;
+}
+
+// Buttons
+.btn-outline-primary,
+.btn-outline-alternate {
+	color       : $accent-spanish-green;
+	border-color: $accent-pakistan-green;
+
+	&:hover {
+		color           : white;
+		background-color: $accent-spanish-green;
+		border-color    : $accent-pakistan-green;
+	}
+}
+
+.btn-primary,
+.btn-alternate {
+	background-color: $accent-spanish-green;
+	border-color    : $accent-pakistan-green;
+
+	&:hover {
+		color           : white !important;
+		background-color: $accent-spanish-green;
+		border-color    : $accent-pakistan-green;
+		box-shadow      : $box-shadow-spanish-green !important;
+	}
+}
+
+// FAQ
+.faqs-dd .card-title {
+	color  : $accent-spanish-green;
+	opacity: .7;
+
+	&.collapsed {
+		color  : $accent-pakistan-green;
+		opacity: 1;
+	}
+}
+
+.bg-dark.edge.top-left::before {
+	z-index: -1;
+}
+
+.why-choose-us .shape-pipes {
+	background-color: gainsboro;
+	opacity         : .3;
+
+	&:before {
+		background-color: gainsboro;
+		opacity         : .5;
+	}
+
+	&:after {
+		background-color: $accent-spanish-green;
+		opacity         : .4;
+	}
+}
+
+// Media Queries
+@media (min-width: $min-width-md) {
+	.navigation {
+		&.fixed-top .nav-link {
+			color: white;
+
+			&:hover {
+				color: lightgray;
+			}
+		}
+
+		&.navbar-sticky .nav-link {
+			color: black;
+
+			&:hover {
+				color: $accent-spanish-green;
+			}
+		}
+	}
+
+	h1.extra-bold.display-md-3.font-md {
+		font-size: 3rem !important;
+	}
+
+	// Quademedia Heading Line
+	.text-center .heading-line:after {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: $max-width-md) {
+
+	.navigation .nav-link.active,
+	.navigation .nav-link:hover {
+		background: black;
+	}
+
+	.row.hero {
+		background: $hero-gradient-sm;
+		padding   : 1rem .5rem;
+	}
+}

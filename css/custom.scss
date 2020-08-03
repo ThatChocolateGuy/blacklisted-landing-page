@@ -38,7 +38,6 @@ a,
 }
 
 a.text-contrast {
-
 	&:hover,
 	&:focus {
 		color: white !important;
@@ -91,6 +90,17 @@ a.text-contrast {
 .powered-design .shape-ring div {
 	border : 5px solid $accent-spanish-green;
 	opacity: .8;
+}
+
+.features-cant-miss {
+	.shapes-container {
+		.shape.shape-circle .aos-init {
+			background-color: $accent-pakistan-green;
+		}
+		.shape-triangle div {
+			background: linear-gradient(45deg, $accent-pakistan-green 0, $accent-spanish-green 100%);
+		}
+	}
 }
 
 // Heading Underscore

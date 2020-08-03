@@ -6,17 +6,13 @@ $max-width-md: 767px;
 $min-width-md: 768px;
 $max-width-sm: 600px;
 
-.team-box {
-  max-height: 185rem;
-}
-
 .bl-container {
   max-width       : 1140px;
   width           : 100%;
   margin          : 100px auto 0;
   box-sizing      : border-box;
   transform-origin: top center;
-  transform       : scale(0.8);
+  // transform       : scale(0.8);
   backdrop-filter : blur(2px);
 
   ul {

@@ -1,12 +1,15 @@
 ::-moz-selection {
   color: #27873f;
+  background: rgba(39, 135, 63, 0.1);
 }
 
 ::selection {
   color: #27873f;
+  background: rgba(39, 135, 63, 0.1);
 }
 
-.fas {
+.fas,
+.far {
   color: #27873f;
 }
 

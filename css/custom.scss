@@ -1,20 +1,23 @@
 // Variables
-$accent-pakistan-green   : #0a6e0a;
-$accent-spanish-green    : #27873f;
-$box-shadow-spanish-green: 0 5px 10px rgba(39, 135, 63, 0.4);
-$hero-gradient-sm        : linear-gradient(90deg, black, transparent);
-$hero-gradient           : linear-gradient(45deg, black, dimgrey 110%);
-$feature-cards-gradient  : linear-gradient(45deg, $accent-pakistan-green 0, $accent-spanish-green 100%);
-$max-width-md            : 767px;
-$min-width-md            : 768px;
+$accent-pakistan-green         : #0a6e0a;
+$accent-spanish-green          : #27873f;
+$accent-spanish-green-selection: rgba(39, 135, 63, .1);
+$box-shadow-spanish-green      : 0 5px 10px rgba(39, 135, 63, 0.4);
+$hero-gradient-sm              : linear-gradient(90deg, black, transparent);
+$hero-gradient                 : linear-gradient(45deg, black, dimgrey 110%);
+$feature-cards-gradient        : linear-gradient(45deg, $accent-pakistan-green 0, $accent-spanish-green 100%);
+$max-width-md                  : 767px;
+$min-width-md                  : 768px;
 
 // Text Selection
 ::selection {
-	color: $accent-spanish-green;
+	color     : $accent-spanish-green;
+	background: $accent-spanish-green-selection;
 }
 
 // Icons
-.fas {
+.fas,
+.far {
 	color: $accent-spanish-green;
 }
 
@@ -38,6 +41,7 @@ a,
 }
 
 a.text-contrast {
+
 	&:hover,
 	&:focus {
 		color: white !important;
@@ -97,6 +101,7 @@ a.text-contrast {
 		.shape.shape-circle .aos-init {
 			background-color: $accent-pakistan-green;
 		}
+
 		.shape-triangle div {
 			background: linear-gradient(45deg, $accent-pakistan-green 0, $accent-spanish-green 100%);
 		}

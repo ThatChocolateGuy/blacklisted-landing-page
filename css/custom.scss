@@ -1,6 +1,8 @@
 // Variables
 $accent-pakistan-green         : #0a6e0a;
 $accent-spanish-green          : #27873f;
+$quade-gold                    : #BE9101;
+$quade-gold-gradient           : linear-gradient(45deg, #BE9101, #D7A603);
 $accent-spanish-green-selection: rgba(39, 135, 63, .1);
 $box-shadow-spanish-green      : 0 5px 10px rgba(39, 135, 63, 0.4);
 $hero-gradient-sm              : linear-gradient(90deg, black, transparent);
@@ -72,7 +74,7 @@ a.text-contrast {
 	color: $accent-spanish-green;
 }
 
-// Animated Shapes
+// Animated Shapes/Icons
 .alter3-header .animation-shape.shape-ring div {
 	border : 5px solid $accent-pakistan-green;
 	opacity: .8;
@@ -96,15 +98,24 @@ a.text-contrast {
 	opacity: .8;
 }
 
+// Quade Media Section
 .features-cant-miss {
 	.shapes-container {
-		.shape.shape-circle .aos-init {
-			background-color: $accent-pakistan-green;
+		.shape.shape-circle div {
+			background: $quade-gold-gradient;
 		}
 
 		.shape-triangle div {
-			background: linear-gradient(45deg, $accent-pakistan-green 0, $accent-spanish-green 100%);
+			background: $quade-gold-gradient;
 		}
+	}
+
+	i.mx-auto.mr-md-3.mx-auto.mr-md-3.accent.pe {
+		color: $quade-gold;
+	}
+
+	.heading-line::after {
+		background-color: $quade-gold;
 	}
 }
 

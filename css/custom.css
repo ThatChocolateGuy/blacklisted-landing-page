@@ -79,12 +79,20 @@ a.text-contrast:hover, a.text-contrast:focus {
   opacity: .8;
 }
 
-.features-cant-miss .shapes-container .shape.shape-circle .aos-init {
-  background-color: #0a6e0a;
+.features-cant-miss .shapes-container .shape.shape-circle div {
+  background: linear-gradient(45deg, #BE9101, #D7A603);
 }
 
 .features-cant-miss .shapes-container .shape-triangle div {
-  background: linear-gradient(45deg, #0a6e0a 0, #27873f 100%);
+  background: linear-gradient(45deg, #BE9101, #D7A603);
+}
+
+.features-cant-miss i.mx-auto.mr-md-3.mx-auto.mr-md-3.accent.pe {
+  color: #BE9101;
+}
+
+.features-cant-miss .heading-line::after {
+  background-color: #BE9101;
 }
 
 .heading-line:after {

@@ -1,16 +1,29 @@
+div,
+a,
+i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 ::-moz-selection {
   color: #27873f;
   background: rgba(39, 135, 63, 0.1);
+  color: black;
 }
 
 ::selection {
   color: #27873f;
   background: rgba(39, 135, 63, 0.1);
+  color: black;
 }
 
 .fas,
 .far {
   color: #27873f;
+}
+
+i.text-alternate, i.far.fa-arrow-alt-circle-down {
+  color: black !important;
 }
 
 a,
@@ -41,7 +54,11 @@ a.text-contrast:hover, a.text-contrast:focus {
 }
 
 .gradient.gradient-primary-light {
-  background-image: linear-gradient(45deg, #0a6e0a 0, #27873f 100%);
+  background: black;
+}
+
+.gradient.gradient-primary-light:hover {
+  background: linear-gradient(45deg, #0a6e0a 0, #27873f 100%);
 }
 
 .static-shape.ghost-shape.ghost-shape-1 {
@@ -100,13 +117,17 @@ a.text-contrast:hover, a.text-contrast:focus {
 }
 
 .btn-outline-primary,
-.btn-outline-alternate {
-  color: #27873f;
-  border-color: #0a6e0a;
+.btn-outline-dark,
+.btn-outline-alternate,
+.btn-contrast {
+  color: black;
+  border-color: black;
 }
 
 .btn-outline-primary:hover,
-.btn-outline-alternate:hover {
+.btn-outline-dark:hover,
+.btn-outline-alternate:hover,
+.btn-contrast:hover {
   color: white;
   background-color: #27873f;
   border-color: #0a6e0a;
@@ -114,8 +135,8 @@ a.text-contrast:hover, a.text-contrast:focus {
 
 .btn-primary,
 .btn-alternate {
-  background-color: #27873f;
-  border-color: #0a6e0a;
+  background-color: black;
+  border-color: black;
 }
 
 .btn-primary:hover,
@@ -127,13 +148,17 @@ a.text-contrast:hover, a.text-contrast:focus {
           box-shadow: 0 5px 10px rgba(39, 135, 63, 0.4) !important;
 }
 
+.faqs-dd i.fas.fa-question {
+  color: rgba(39, 135, 63, 0.2);
+}
+
 .faqs-dd .card-title {
   color: #27873f;
   opacity: .7;
 }
 
 .faqs-dd .card-title.collapsed {
-  color: #0a6e0a;
+  color: black;
   opacity: 1;
 }
 

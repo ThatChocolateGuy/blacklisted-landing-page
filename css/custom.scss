@@ -4,17 +4,26 @@ $accent-spanish-green          : #27873f;
 $quade-gold                    : #BE9101;
 $quade-gold-gradient           : linear-gradient(45deg, #BE9101, #D7A603);
 $accent-spanish-green-selection: rgba(39, 135, 63, .1);
+$accent-spanish-green-faq-qm   : rgba(39, 135, 63, .2);
 $box-shadow-spanish-green      : 0 5px 10px rgba(39, 135, 63, 0.4);
 $hero-gradient-sm              : linear-gradient(90deg, black, transparent);
 $hero-gradient                 : linear-gradient(45deg, black, dimgrey 110%);
 $feature-cards-gradient        : linear-gradient(45deg, $accent-pakistan-green 0, $accent-spanish-green 100%);
 $max-width-md                  : 767px;
 $min-width-md                  : 768px;
+$global-transition             : all .3s ease;
+
+div,
+a,
+i {
+	transition: $global-transition;
+}
 
 // Text Selection
 ::selection {
 	color     : $accent-spanish-green;
 	background: $accent-spanish-green-selection;
+	color     : black;
 }
 
 // Icons
@@ -22,6 +31,14 @@ $min-width-md                  : 768px;
 .far {
 	color: $accent-spanish-green;
 }
+
+i {
+	&.text-alternate,
+	&.far.fa-arrow-alt-circle-down {
+		color: black !important;
+	}
+}
+
 
 // Accents
 a,
@@ -57,7 +74,12 @@ a.text-contrast {
 
 // Feature Cards
 .gradient.gradient-primary-light {
-	background-image: $feature-cards-gradient;
+	// background-image: $feature-cards-gradient;
+	background: black;
+
+	&:hover {
+		background: $feature-cards-gradient;
+	}
 }
 
 // Nav BG
@@ -126,9 +148,11 @@ a.text-contrast {
 
 // Buttons
 .btn-outline-primary,
-.btn-outline-alternate {
-	color       : $accent-spanish-green;
-	border-color: $accent-pakistan-green;
+.btn-outline-dark,
+.btn-outline-alternate,
+.btn-contrast {
+	color       : black;
+	border-color: black;
 
 	&:hover {
 		color           : white;
@@ -139,8 +163,8 @@ a.text-contrast {
 
 .btn-primary,
 .btn-alternate {
-	background-color: $accent-spanish-green;
-	border-color    : $accent-pakistan-green;
+	background-color: black;
+	border-color    : black;
 
 	&:hover {
 		color           : white !important;
@@ -151,13 +175,19 @@ a.text-contrast {
 }
 
 // FAQ
-.faqs-dd .card-title {
-	color  : $accent-spanish-green;
-	opacity: .7;
+.faqs-dd {
+	i.fas.fa-question {
+		color: $accent-spanish-green-faq-qm;
+	}
 
-	&.collapsed {
-		color  : $accent-pakistan-green;
-		opacity: 1;
+	.card-title {
+		color  : $accent-spanish-green;
+		opacity: .7;
+
+		&.collapsed {
+			color  : black;
+			opacity: 1;
+		}
 	}
 }
 

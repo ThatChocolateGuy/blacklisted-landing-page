@@ -1,0 +1,763 @@
+.modal-dialog {
+  max-width: 700px;
+
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.sign-up-modal {
+  font-family     : "Roboto", arial, sans-serif;
+  font-size       : .8em;
+  color           : #fefefe;
+  border-style    : solid;
+  border-width    : 10px;
+  border-color    : #fefefe;
+  border-radius   : 10px 10px 10px 10px;
+  background-image: linear-gradient(45deg, black, dimgrey 110%);
+  // width           : 90%;
+  min-width       : 400px;
+  max-width       : 700px;
+  margin          : 0 auto;
+  padding         : 25px;
+
+  p {
+    font-size  : 1em;
+    font-weight: 300;
+  }
+
+  .form-checkbox label {
+    font-size  : 1em;
+    font-weight: 300;
+    cursor     : pointer;
+  }
+
+  .logo {
+    fill: #fefefe;
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 25em;
+  }
+
+  .logo-container {
+    position  : relative;
+    text-align: center;
+    width     : 100%;
+    margin    : 0 0 20px;
+    display   : inline-block;
+  }
+
+  form {
+    margin    : 0 auto;
+    text-align: center;
+  }
+
+  input {
+    margin-bottom: 15px;
+
+    &::-webkit-input-placeholder {
+      color  : #fefefe;
+      opacity: 1;
+    }
+
+    &[type="submit"] {
+      font-weight : 700;
+      font-size   : 1.8em;
+      color       : #111;
+      background  : #fefefe;
+      box-shadow  : 0px 4px 0px 0px linear-gradient(45deg, black, dimgrey 110%);
+      border-style: none;
+      padding     : 10px 50px;
+      margin      : 25px 0 15px 0;
+      position    : relative;
+      display     : inline-block;
+      transition  : all 0.1s linear;
+
+      &:active {
+        box-shadow       : 0 2px 0 #27873f;
+        transform        : translateY(3px);
+        -webkit-transform: translateY(3px);
+        -ms-transform    : translateY(3px);
+      }
+    }
+
+    &[type="email"],
+    &[type="text"],
+    &[type="password"],
+    &[type="url"],
+    &[type="checkbox"]:focus,
+    &[type="submit"]:focus {
+      outline: 0;
+    }
+
+    &[type="email"],
+    &[type="text"],
+    &[type="password"],
+    &[type="url"] {
+      font-weight : 700;
+      font-size   : 1.4em;
+      padding     : 10px;
+      border-width: 2px;
+      border-color: rgba(247, 247, 247, 0.3);
+      border-style: solid;
+      background  : url("transparent");
+    }
+
+    &[type="email"]:focus,
+    &[type="text"]:focus,
+    &[type="password"]:focus,
+    &[type="url"]:focus {
+      background: white;
+      opacity   : 0.8;
+      transition: all 0.3s ease;
+      color     : #222;
+    }
+  }
+
+  textarea::-webkit-input-placeholder {
+    color  : #fefefe;
+    opacity: 1;
+  }
+
+  select option,
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder {
+    color     : #111;
+    opacity   : 0.5;
+    transition: all 0.3s ease;
+  }
+
+  .input-container,
+  textarea {
+    width : 284px;
+    margin: 0 auto 10px;
+  }
+
+  .select-container {
+    width : 284px;
+    margin: 0 auto 10px;
+
+    select {
+      width : 284px;
+      margin: 0 auto 10px;
+    }
+  }
+
+  select,
+  textarea,
+  input {
+    font-weight : 700;
+    font-size   : 1.4em;
+    padding     : 10px;
+    border-width: 2px;
+    border-color: rgba(247, 247, 247, 0.3);
+    border-style: solid;
+    background  : url("transparent");
+    outline     : 0;
+    color       : #fefefe;
+  }
+
+  textarea:focus {
+    background: white;
+    opacity   : 0.8;
+    transition: all 0.3s ease;
+    color     : #222;
+  }
+
+  a {
+    color          : #fefefe;
+    text-decoration: underline;
+
+    &:hover {
+      color: linear-gradient(45deg, black, dimgrey 110%);
+    }
+  }
+
+  #close-modal-button {
+    border-radius   : 50%;
+    width           : 50px;
+    height          : 50px;
+    background-color: #27873f;
+    float           : right;
+    position        : relative;
+    top             : -55px;
+    left            : 50px;
+    cursor          : pointer;
+
+    &:before {
+      content  : "\2716";
+      font-size: 1.5em;
+      position : relative;
+      top      : 10px;
+      left     : 17px;
+    }
+  }
+
+  .datefield {
+    margin-top: 10px;
+  }
+}
+
+.mc-field-group.input-container .font-correction {
+  font-size: 1.4em;
+}
+
+#mc_embed_signup_scroll>h2 {
+  margin-bottom: 30px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .sign-up-modal {
+    .form-checkbox {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .password-input {
+      width      : 47.5%;
+      margin-left: -11.5%;
+    }
+
+    .username-input {
+      width: 47.5%;
+    }
+
+    .email-input {
+      margin-bottom: 15px;
+      margin-top   : 30px;
+    }
+
+    form {
+      width: 70%;
+    }
+
+    .input-container,
+    textarea {
+      width : 320px;
+      margin: 0 auto 10px;
+    }
+
+    .select-container {
+      width : 320px;
+      margin: 0 auto 10px;
+
+      select {
+        width : 320px;
+        margin: 0 auto 10px;
+      }
+    }
+  }
+}
+
+.radio-container {
+  position  : relative;
+  display   : table;
+  text-align: left;
+  margin    : 10px auto;
+  font-size: initial;
+
+  input {
+    position: fixed;
+    top     : -1.5em;
+    left    : -1.5em;
+  }
+
+  label {
+    cursor     : pointer;
+    display    : block;
+    font-weight: bold;
+    text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
+    transition : color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.5em;
+    }
+
+    span {
+      box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2),
+        0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
+      display       : inline-block;
+      margin-right  : 0.5em;
+      vertical-align: bottom;
+      width         : 1.5em;
+      height        : 1.5em;
+      transition    : transform 0.2s cubic-bezier(0.5, 0, 0.5, 2),
+        box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+        color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+      border-radius: 50%;
+    }
+  }
+
+  .worm__segment:before {
+    border-radius: 50%;
+  }
+
+  input:checked+label {
+    color: #27873f;
+
+    span {
+      color: #27873f;
+    }
+  }
+
+  .worm__segment:before {
+    color: #27873f;
+  }
+
+  input:checked+label {
+    transition-delay: 0.4s;
+
+    span {
+      transition-delay: 0.4s;
+      transform       : scale(1.2);
+    }
+  }
+
+  .worm {
+    top     : 0.375em;
+    left    : 0.375em;
+    position: absolute;
+  }
+
+  .worm__segment {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 0.75em;
+    height    : 0.75em;
+    transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+    &:before {
+      animation-duration       : 0.4s;
+      animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+      background               : currentColor;
+      content                  : "";
+      display                  : block;
+      width                    : 100%;
+      height                   : 100%;
+    }
+
+    &:first-child:before,
+    &:last-child:before {
+      box-shadow: 0 0 1em 0 currentColor;
+    }
+
+    &:nth-child(2) {
+      transition-delay: 0.004s;
+
+      &:before {
+        animation-delay: 0.004s;
+      }
+    }
+
+    &:nth-child(3) {
+      transition-delay: 0.008s;
+
+      &:before {
+        animation-delay: 0.008s;
+      }
+    }
+
+    &:nth-child(4) {
+      transition-delay: 0.012s;
+
+      &:before {
+        animation-delay: 0.012s;
+      }
+    }
+
+    &:nth-child(5) {
+      transition-delay: 0.016s;
+
+      &:before {
+        animation-delay: 0.016s;
+      }
+    }
+
+    &:nth-child(6) {
+      transition-delay: 0.02s;
+
+      &:before {
+        animation-delay: 0.02s;
+      }
+    }
+
+    &:nth-child(7) {
+      transition-delay: 0.024s;
+
+      &:before {
+        animation-delay: 0.024s;
+      }
+    }
+
+    &:nth-child(8) {
+      transition-delay: 0.028s;
+
+      &:before {
+        animation-delay: 0.028s;
+      }
+    }
+
+    &:nth-child(9) {
+      transition-delay: 0.032s;
+
+      &:before {
+        animation-delay: 0.032s;
+      }
+    }
+
+    &:nth-child(10) {
+      transition-delay: 0.036s;
+
+      &:before {
+        animation-delay: 0.036s;
+      }
+    }
+
+    &:nth-child(11) {
+      transition-delay: 0.04s;
+
+      &:before {
+        animation-delay: 0.04s;
+      }
+    }
+
+    &:nth-child(12) {
+      transition-delay: 0.044s;
+
+      &:before {
+        animation-delay: 0.044s;
+      }
+    }
+
+    &:nth-child(13) {
+      transition-delay: 0.048s;
+
+      &:before {
+        animation-delay: 0.048s;
+      }
+    }
+
+    &:nth-child(14) {
+      transition-delay: 0.052s;
+
+      &:before {
+        animation-delay: 0.052s;
+      }
+    }
+
+    &:nth-child(15) {
+      transition-delay: 0.056s;
+
+      &:before {
+        animation-delay: 0.056s;
+      }
+    }
+
+    &:nth-child(16) {
+      transition-delay: 0.06s;
+
+      &:before {
+        animation-delay: 0.06s;
+      }
+    }
+
+    &:nth-child(17) {
+      transition-delay: 0.064s;
+
+      &:before {
+        animation-delay: 0.064s;
+      }
+    }
+
+    &:nth-child(18) {
+      transition-delay: 0.068s;
+
+      &:before {
+        animation-delay: 0.068s;
+      }
+    }
+
+    &:nth-child(19) {
+      transition-delay: 0.072s;
+
+      &:before {
+        animation-delay: 0.072s;
+      }
+    }
+
+    &:nth-child(20) {
+      transition-delay: 0.076s;
+
+      &:before {
+        animation-delay: 0.076s;
+      }
+    }
+
+    &:nth-child(21) {
+      transition-delay: 0.08s;
+
+      &:before {
+        animation-delay: 0.08s;
+      }
+    }
+
+    &:nth-child(22) {
+      transition-delay: 0.084s;
+
+      &:before {
+        animation-delay: 0.084s;
+      }
+    }
+
+    &:nth-child(23) {
+      transition-delay: 0.088s;
+
+      &:before {
+        animation-delay: 0.088s;
+      }
+    }
+
+    &:nth-child(24) {
+      transition-delay: 0.092s;
+
+      &:before {
+        animation-delay: 0.092s;
+      }
+    }
+
+    &:nth-child(25) {
+      transition-delay: 0.096s;
+
+      &:before {
+        animation-delay: 0.096s;
+      }
+    }
+
+    &:nth-child(26) {
+      transition-delay: 0.1s;
+
+      &:before {
+        animation-delay: 0.1s;
+      }
+    }
+
+    &:nth-child(27) {
+      transition-delay: 0.104s;
+
+      &:before {
+        animation-delay: 0.104s;
+      }
+    }
+
+    &:nth-child(28) {
+      transition-delay: 0.108s;
+
+      &:before {
+        animation-delay: 0.108s;
+      }
+    }
+
+    &:nth-child(29) {
+      transition-delay: 0.112s;
+
+      &:before {
+        animation-delay: 0.112s;
+      }
+    }
+
+    &:nth-child(30) {
+      transition-delay: 0.116s;
+
+      &:before {
+        animation-delay: 0.116s;
+      }
+    }
+  }
+
+  input {
+    &:nth-of-type(1):checked~.worm .worm__segment:before {
+      animation-name: hop1;
+    }
+
+    &:nth-of-type(2):checked~.worm .worm__segment {
+      transform: translateY(3em);
+
+      &:before {
+        animation-name: hop2;
+      }
+    }
+
+    &:nth-of-type(3):checked~.worm .worm__segment {
+      transform: translateY(6em);
+
+      &:before {
+        animation-name: hop3;
+      }
+    }
+  }
+}
+
+@keyframes hop1 {
+
+  from,
+  to {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1.5em);
+  }
+}
+
+@keyframes hop2 {
+
+  from,
+  to {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1.5em);
+  }
+}
+
+@keyframes hop3 {
+
+  from,
+  to {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1.5em);
+  }
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"] {
+    --active          : rgb(39, 135, 63);
+    --active-inner    : white;
+    --focus           : 2px rgba(39, 94, 254, 0.3);
+    --border          : #fff;
+    --border-hover    : rgb(39, 135, 63);
+    --background      : transparent;
+    --disabled        : #f6f8ff;
+    --disabled-inner  : #e1e6f9;
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    height            : 21px;
+    outline           : none;
+    display           : inline-block;
+    vertical-align    : top;
+    position          : relative;
+    margin            : 0;
+    cursor            : pointer;
+    border            : 1px solid var(--bc, var(--border));
+    background        : var(--b, var(--background));
+    transition        : background 0.3s, border-color 0.3s, box-shadow 0.2s;
+
+    &:after {
+      content : "";
+      display : block;
+      left    : 0;
+      top     : 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+        opacity var(--d-o, 0.2s);
+    }
+
+    &:checked {
+      --b    : var(--active);
+      --bc   : var(--active);
+      --d-o  : 0.3s;
+      --d-t  : 0.6s;
+      --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+
+    &:disabled {
+      --b    : var(--disabled);
+      cursor : not-allowed;
+      opacity: 0.9;
+
+      &:checked {
+        --b : var(--disabled-inner);
+        --bc: var(--border);
+      }
+
+      +label {
+        cursor: not-allowed;
+      }
+    }
+
+    &:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+
+    &:not(.switch) {
+      width: 21px;
+
+      &:after {
+        opacity: var(--o, 0);
+      }
+
+      &:checked {
+        --o: 1;
+      }
+
+      border-radius: 7px;
+
+      &:after {
+        width      : 5px;
+        height     : 9px;
+        border     : 2px solid var(--active-inner);
+        border-top : 0;
+        border-left: 0;
+        left       : 7px;
+        top        : 4px;
+        transform  : rotate(var(--r, 20deg));
+      }
+
+      &:checked {
+        --r: 43deg;
+      }
+    }
+
+    +label {
+      font-size     : 14px;
+      line-height   : 21px;
+      display       : inline-block;
+      vertical-align: top;
+      cursor        : pointer;
+      margin-left   : 4px;
+    }
+
+    &.switch {
+      width        : 38px;
+      border-radius: 11px;
+
+      &:after {
+        left         : 2px;
+        top          : 2px;
+        border-radius: 50%;
+        width        : 15px;
+        height       : 15px;
+        background   : var(--ab, var(--border));
+        transform    : translateX(var(--x, 0));
+      }
+
+      &:checked {
+        --ab: var(--active-inner);
+        --x : 17px;
+      }
+
+      &:disabled:not(:checked):after {
+        opacity: 0.6;
+      }
+    }
+  }
+}

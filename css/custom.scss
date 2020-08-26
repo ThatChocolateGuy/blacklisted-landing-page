@@ -1,7 +1,7 @@
 // Variables
-$accent-pakistan-green         : #0a6e0a;
-$accent-spanish-green          : #27873f;
-$quade-gold                    : #BE9101;
+$accent-pakistan-green         : rgb(10, 110, 10);
+$accent-spanish-green          : rgb(39, 135, 63);
+$quade-gold                    : rgb(190, 145, 1);
 $quade-gold-gradient           : linear-gradient(45deg, #BE9101, #D7A603);
 $accent-spanish-green-selection: rgba(39, 135, 63, .1);
 $accent-spanish-green-faq-qm   : rgba(39, 135, 63, .2);
@@ -33,6 +33,7 @@ i {
 }
 
 i {
+
 	&.text-alternate,
 	&.far.fa-arrow-alt-circle-down {
 		color: black !important;
@@ -154,10 +155,13 @@ a.text-contrast {
 	color       : black;
 	border-color: black;
 
-	&:hover {
-		color           : white;
-		background-color: $accent-spanish-green;
-		border-color    : $accent-pakistan-green;
+	&:hover,
+	&:active,
+	&:focus {
+		color           : white !important;
+		background-color: $accent-spanish-green !important;
+		border-color    : $accent-pakistan-green !important;
+		box-shadow      : $box-shadow-spanish-green !important;
 	}
 }
 
@@ -166,10 +170,12 @@ a.text-contrast {
 	background-color: black;
 	border-color    : black;
 
-	&:hover {
+	&:hover,
+	&:active,
+	&:focus {
 		color           : white !important;
-		background-color: $accent-spanish-green;
-		border-color    : $accent-pakistan-green;
+		background-color: $accent-spanish-green !important;
+		border-color    : $accent-pakistan-green !important;
 		box-shadow      : $box-shadow-spanish-green !important;
 	}
 }

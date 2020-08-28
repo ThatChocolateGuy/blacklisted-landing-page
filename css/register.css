@@ -96,7 +96,7 @@
   border-width: 2px;
   border-color: rgba(247, 247, 247, 0.3);
   border-style: solid;
-  background: url("transparent");
+  background: transparent;
 }
 
 .sign-up-modal input[type="email"]:focus, .sign-up-modal input[type="text"]:focus, .sign-up-modal input[type="password"]:focus, .sign-up-modal input[type="url"]:focus {
@@ -146,7 +146,7 @@
   border-width: 2px;
   border-color: rgba(247, 247, 247, 0.3);
   border-style: solid;
-  background: url("transparent");
+  background: transparent;
   outline: 0;
   color: #fefefe;
 }

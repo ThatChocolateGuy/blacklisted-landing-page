@@ -1,9 +1,8 @@
-// $("#close-modal-button").click(function () {
-//   $(".sign-up-modal").fadeOut(200);
-//   // $(".sign-up-modal").fadeIn(2000);
-// });
-
-$('#s1, #s2').change(function () {
+/*
+  Monitors TOS switch for toggle and
+  disables submit button if not checked
+*/
+$('#signupChk').change(function () {
   if ($(this).is(":checked")) {
     $('.bl-submit').removeClass('disabled');
     $(".bl-submit").removeAttr('disabled');

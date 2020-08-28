@@ -746,7 +746,7 @@
 					<div class="col-md-6 mx-auto">
 						<div class="section-heading text-center">
 							<i class="pe pe-7s-unlock fa-3x text-alternate"></i>
-							<h2 class="heading-line bold mt-4">Subcribe or Register</h2>
+							<h2 class="heading-line bold mt-4">Stay in the Loop!</h2>
 							<p class="lead text-muted">Subscribe to our mailing list to stay in the know, or register your black-owned
 								business today!</p>
 						</div>
@@ -754,33 +754,24 @@
 				</div>
 
 				<div class="nav flex-column flex-md-row align-items-center justify-content-center">
-					<!-- remove from DOM when clicking Register btn - reload on modal exit -->
-					<a href="#!" class="btn btn-alternate btn-lg py-3 px-4 bold mr-0 mr-md-3 mb-3 mb-md-0" data-toggle="modal"
-						data-target="#signupModal">Sign up for updates</a>
-					<!-- remove from DOM when clicking Signup btn - reload on modal exit -->
+
+					<!-- create single template that dynamically loads fields from btn clicks -->
+
+					<button href="#!" class="btn btn-alternate btn-lg py-3 px-4 bold mr-0 mr-md-3 mb-3 mb-md-0"
+						data-toggle="modal" data-target="#modal" onclick="register()">Sign up for updates</button>
+
 					<a href="" class="btn btn-outline-dark btn-lg py-3 px-4 bold" data-toggle="modal"
-						data-target="#registerModal">Register your
+						data-target="#modal" onclick="signup()">Register your
 						company</a>
 				</div>
 
-				<!-- Signup Modal -->
-				<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalCenterTitle"
+				<!-- Modal -->
+				<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle"
 					aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
 								<div class="bl-signup"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Register Modal -->
-				<div class="modal fade" id="registerModal" tabindex="-1" role="dialog"
-					aria-labelledby="registerModalCenterTitle" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-						<div class="modal-content">
-							<div class="modal-body">
 								<div class="bl-register"></div>
 							</div>
 						</div>
@@ -879,10 +870,15 @@
 	<script src="js/site.js"></script>
 
 	<script>
-		$(document).ready(function () {
+		function register() {
+			$(".bl-signup").html(``);
 			$(".bl-register").load("register.html");
+		}
+
+		function signup() {
+			$(".bl-register").html(``);
 			$(".bl-signup").load("signup.html");
-		});
+		}
 	</script>
 </body>
 

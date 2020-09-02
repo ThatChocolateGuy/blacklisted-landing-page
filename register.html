@@ -323,8 +323,8 @@
             </div>
 
             <div class="mc-field-group input-container">
-              <input type="text" value="" name="LINKEDIN" class="col-sm-12 with-placeholder url" placeholder="LinkedIn URL"
-                id="mce-LINKEDIN">
+              <input type="text" value="" name="LINKEDIN" class="col-sm-12 with-placeholder url"
+                placeholder="LinkedIn URL" id="mce-LINKEDIN">
             </div>
           </div>
 
@@ -480,13 +480,27 @@
         <input id="signupChk" type="checkbox" class="switch">
         <label for="signupChk">I agree to <a href="">terms and conditions</a></label>
       </div>
-      
+
       <div class="clear">
-        <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button btn bl-submit" role="button"
-          aria-disabled="true" disabled>
+        <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button btn bl-submit"
+          role="button" aria-disabled="true" disabled>
       </div>
     </form>
   </div>
 </div>
 
-<script src="js/signup.js"></script>
+<script>
+  /*
+    Monitors TOS switch for toggle and
+    disables submit button if not checked
+  */
+  $('#signupChk').change(function () {
+    if ($(this).is(":checked")) {
+      $('.bl-submit').removeClass('disabled');
+      $(".bl-submit").removeAttr('disabled');
+    } else {
+      $('.bl-submit').addClass('disabled');
+      $(".bl-submit").prop('disabled', true);
+    }
+  });
+</script>

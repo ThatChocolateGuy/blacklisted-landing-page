@@ -59,10 +59,10 @@
 				</div>
 
 				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link scrollto" href="#home">Home</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#team">Team</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#sign-up">Sign up</a></li>
+					<li class="nav-item"><a class="nav-link scrollto smoothscroll" href="#home">Home</a></li>
+					<li class="nav-item"><a class="nav-link scrollto smoothscroll" href="#features">Features</a></li>
+					<li class="nav-item"><a class="nav-link scrollto smoothscroll" href="#team">Team</a></li>
+					<li class="nav-item"><a class="nav-link scrollto smoothscroll" href="#sign-up">Sign up</a></li>
 				</ul>
 			</div>
 		</div>
@@ -677,7 +677,7 @@
 
 								<div id="v1-q3" class="collapse card-body">
 									Register your business using <a href="" class="italic" data-toggle="modal"
-										data-target="#registerModal">this form</a>
+										data-target="#modal" onclick="signup('register.html')">this form</a>
 								</div>
 							</div>
 						</div>
@@ -757,12 +757,12 @@
 
 					<!-- create single template that dynamically loads fields from btn clicks -->
 
-					<button href="#!" class="btn btn-alternate btn-lg py-3 px-4 bold mr-0 mr-md-3 mb-3 mb-md-0"
-						data-toggle="modal" data-target="#modal" onclick="register()">Sign up for updates</button>
+					<button class="btn btn-alternate btn-lg py-3 px-4 bold mr-0 mr-md-3 mb-3 mb-md-0" data-toggle="modal"
+						data-target="#modal" onclick="signup('signup.html')">Sign up for updates</button>
 
-					<a href="" class="btn btn-outline-dark btn-lg py-3 px-4 bold" data-toggle="modal"
-						data-target="#modal" onclick="signup()">Register your
-						company</a>
+					<button class="btn btn-outline-dark btn-lg py-3 px-4 bold" data-toggle="modal" data-target="#modal"
+						onclick="signup('register.html')">Register your
+						company</button>
 				</div>
 
 				<!-- Modal -->
@@ -869,13 +869,12 @@
 	<script src="js/site.js"></script>
 
 	<script>
-		function register() {
-			$(".bl-signup").load("register.html");
-		}
-		function signup() {
-			$(".bl-signup").load("signup.html");
+		function signup(form) {
+			$(".bl-signup").load(form)
 		}
 	</script>
+
+	<script src="js/signup.js"></script>
 </body>
 
 </html>

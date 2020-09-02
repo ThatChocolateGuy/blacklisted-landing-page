@@ -47,4 +47,18 @@
   </form>
 </div>
 
-<script src="js/signup.js"></script>
+<script>
+  /*
+    Monitors TOS switch for toggle and
+    disables submit button if not checked
+  */
+  $('#signupChk').change(function () {
+    if ($(this).is(":checked")) {
+      $('.bl-submit').removeClass('disabled');
+      $(".bl-submit").removeAttr('disabled');
+    } else {
+      $('.bl-submit').addClass('disabled');
+      $(".bl-submit").prop('disabled', true);
+    }
+  });
+</script>

@@ -1,5 +1,6 @@
 .modal-dialog {
   max-width: 700px;
+  top: 20px;
 }
 
 .modal-dialog .modal-body {
@@ -15,7 +16,7 @@
   border-color: #fefefe;
   border-radius: 10px 10px 10px 10px;
   background-image: linear-gradient(45deg, black, dimgrey 110%);
-  min-width: 400px;
+  min-width: 350px;
   max-width: 700px;
   margin: 0 auto;
   padding: 25px;
@@ -198,40 +199,6 @@
 
 #mc_embed_signup_scroll > h2 {
   margin-bottom: 30px !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .sign-up-modal .form-checkbox {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .sign-up-modal .password-input {
-    width: 47.5%;
-    margin-left: -11.5%;
-  }
-  .sign-up-modal .username-input {
-    width: 47.5%;
-  }
-  .sign-up-modal .email-input {
-    margin-bottom: 15px;
-    margin-top: 30px;
-  }
-  .sign-up-modal form {
-    width: 70%;
-  }
-  .sign-up-modal .input-container,
-  .sign-up-modal textarea {
-    width: 320px;
-    margin: 0 auto 10px;
-  }
-  .sign-up-modal .select-container {
-    width: 320px;
-    margin: 0 auto 10px;
-  }
-  .sign-up-modal .select-container select {
-    width: 320px;
-    margin: 0 auto 10px;
-  }
 }
 
 .radio-container {
@@ -652,6 +619,40 @@
 .radio-container input:nth-of-type(3):checked ~ .worm .worm__segment:before {
   -webkit-animation-name: hop3;
           animation-name: hop3;
+}
+
+@media only screen and (min-width: 768px) {
+  .sign-up-modal .form-checkbox {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .sign-up-modal .password-input {
+    width: 47.5%;
+    margin-left: -11.5%;
+  }
+  .sign-up-modal .username-input {
+    width: 47.5%;
+  }
+  .sign-up-modal .email-input {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .sign-up-modal form {
+    width: 70%;
+  }
+  .sign-up-modal .input-container,
+  .sign-up-modal textarea {
+    width: 320px;
+    margin: 0 auto 10px;
+  }
+  .sign-up-modal .select-container {
+    width: 320px;
+    margin: 0 auto 10px;
+  }
+  .sign-up-modal .select-container select {
+    width: 320px;
+    margin: 0 auto 10px;
+  }
 }
 
 @-webkit-keyframes hop1 {
